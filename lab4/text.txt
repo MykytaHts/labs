@@ -1,0 +1,30 @@
+Monitor is created. 
+{
+Monitor{controller=Controller{voltage=12, width=140, height=60, availableLVDS=true}, corps=Corps{material='plastic', diagonalInInches=20}, manufacturer='Sumsung', mainDisplay=Display{resolution=R1400x1050, scaleInPercent=125}, additionalDisplays=[], fileWriter=java.io.PrintWriter@7a07c5b4}
+}
+
+Added additional display. 
+{
+Display{resolution=R1400x1050, scaleInPercent=100}
+}
+
+The controller has been changed. 
+{
+Controller{voltage=16, width=60, height=124, availableLVDS=true}
+}
+
+The corps has been changed. 
+{
+Corps{material='iron', diagonalInInches=35}
+}
+
+The manufacturer has been changed. 
+{
+Apple
+}
+
+Deleted additional display. 
+{
+Display{resolution=R1400x1050, scaleInPercent=100}
+}
+
