@@ -17,9 +17,10 @@ public class Main {
         hdd.addShop(new ClothingShop("Windows", 852124325));
         hdd.addShop(new ClothingShop("Weekend" , 32568741));
         hdd.addShop(new Bakery("People" , 2547814));
+        hdd.addShop(new Bakery("People" , 2547814));
         hdd.addShop(new Bakery("JRE" , 67894257));
-        Shop res = hdd.findMax();
-        System.out.print("The greatest data on HDD is: \n");
-        res.print();
+        System.out.println(hdd.countBakeries());
+        System.out.println(hdd.countClothingShops());
+
     }
 }

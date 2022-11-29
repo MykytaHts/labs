@@ -1,6 +1,8 @@
 import KI35.Hotsii.Lab6.AccountantFio;
 
+import java.io.File;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.util.Scanner;
 
 /**
@@ -15,20 +17,8 @@ public class Main {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
-        AccountantFio fio = new AccountantFio();
-        fio.setBinaryFilePath("binary.bin");
-        fio.setTxtFilePath("text.txt");
-        Scanner s = new Scanner(System.in);
-        System.out.print("Enter data: ");
-        double data = s.nextDouble();
-        fio.calculate(data);
-        System.out.println("Result is: " + fio.getResult());
-        fio.writeResTxt();
-        fio.writeResBin();
-        fio.readResBin();
-        System.out.println("Result is: " + fio.getResult());
-        fio.readResTxt();
-        System.out.println("Result is: " + fio.getResult());
-
+        RandomAccessFile file = new RandomAccessFile(new File("text.txt"), "rw");
+        file.writeChars("hello");
+        file.close();
     }
 }

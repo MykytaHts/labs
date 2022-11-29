@@ -13,7 +13,7 @@ import static utils.Validator.validateStringValue;
  * Class <code>Monitor</code> implements monitor.
  * @author Hotsii Mykyta
  */
-public class Monitor {
+public abstract class Monitor implements Monitorable {
     private Controller controller;
     private Corps corps;
     private String manufacturer;

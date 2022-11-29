@@ -62,7 +62,7 @@ public class AccountantFio {
 
     /**
      * Method returns the result
-     * @return
+     * @return result
      */
     public double getResult() {
         return result;

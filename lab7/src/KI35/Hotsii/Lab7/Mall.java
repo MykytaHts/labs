@@ -18,6 +18,26 @@ public class Mall<T extends Shop> {
         shops.add(shop);
     }
 
+    public int countClothingShops() {
+        int clothingShopsCounter = 0;
+        for (Shop shop : shops) {
+            if (shop.getClass() == ClothingShop.class) {
+                clothingShopsCounter++;
+            }
+        }
+        return clothingShopsCounter;
+    }
+
+    public int countBakeries() {
+        int bakeryCounter = 0;
+        for (Shop shop : shops) {
+            if (shop.getClass() == Bakery.class) {
+                bakeryCounter++;
+            }
+        }
+        return bakeryCounter;
+    }
+
     /**
      *
      * @param index - index

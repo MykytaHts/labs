@@ -2,7 +2,7 @@ package KI35.Hotsii.Lab4;
 
 import java.util.function.Consumer;
 
-public class SensorScreen extends Monitor implements Sensorable{
+public class SensorScreen extends Monitor implements Sensorable {
     /**
      * Constructor
      */
